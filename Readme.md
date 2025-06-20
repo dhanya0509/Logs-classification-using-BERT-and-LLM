@@ -1,74 +1,42 @@
-# Log Classification Project
+# 🔍 Logs Classification using BERT and LLM
 
-This project implements log message classification using both BERT embeddings and LLM approaches.
+This project demonstrates a scalable approach to **log classification** using **BERT embeddings** and **Large Language Models (LLMs)**. It supports diverse log formats and provides dual-mode classification (traditional ML + LLM API), enabling flexibility in automated log categorization and error detection.
 
-## Project Description
-A Python-based system for classifying log messages into different categories using:
-- BERT embeddings with SentenceTransformer
-- Large Language Models integration
-- Machine learning classification
+---
 
-## Setup and Installation
+## 🚀 Project Overview
 
-### Prerequisites
-- Python 3.13.2
-- Virtual environment (virtualenv)
+- Classifies logs into custom categories using **BERT Sentence Embeddings**
+- Integrates **Scikit-learn** for model training and **GROQ LLM API** for zero-shot predictions
+- Includes a flexible pipeline to handle multi-format logs, clean inputs, and generate inference-ready data
 
-### Installation Steps
-1. Clone the repository:
-```
-bash git clone <repository-url> cd Classification_Logs
-```
+---
 
-2. Create and activate virtual environment:
-```
-bash python -m venv .venv
-# On Windows:
-.venv\Scripts\activate
-# On Unix or MacOS:
-source .venv/bin/activate
-```
+## 🛠️ Technologies Used
 
-3. Install required packages:
-```bash
-pip install sentence-transformers scikit-learn joblib groq python-dotenv
-```
-```
-## Project Structure
-```
-Classification_Logs/
-├── .venv/                  # Virtual environment directory
-├── processor.bert.py       # BERT-based classification implementation
-├── processor_llm.py        # LLM-based classification implementation
-├── log_classifier.joblib   # Saved classifier model
-└── README.md              # This file
-```
-## Usage
-The project provides two different approaches for log classification:
-### BERT-based Classification
-``` python
-python processor.bert.py
-```
-### LLM-based Classification
-``` python
-python processor_llm.py
-```
-## Environment Variables
-Create a `.env` file in the project root with:
-```
-GROQ_API_KEY=your_api_key_here
-```
-## Features
-- Log message classification using BERT embeddings
-- Alternative classification using Large Language Models
-- Support for multiple log formats
-- Extensible classification categories
+- Python
+- BERT (SentenceTransformers)
+- Scikit-learn
+- Joblib
+- GROQ LLM API
+- Pandas, NumPy
+- Matplotlib, Seaborn
 
-## Dependencies
-- sentence-transformers
-- scikit-learn
-- joblib
-- groq
-- python-dotenv
-- numpy
-- pandas
+---
+
+## 📊 Features
+
+- ✅ Preprocessing pipeline for log cleaning and formatting
+- ✅ Sentence embeddings via BERT for semantic understanding
+- ✅ Classification using Scikit-learn (Logistic Regression, Random Forest, etc.)
+- ✅ Optional integration with LLMs (GROQ API) for zero-shot predictions
+- ✅ Dual-mode classification (ML model and cloud-based LLM)
+
+## 📈 Use Cases
+- IT Operations: Automatically classify logs by service, type, or error level
+
+- Cybersecurity: Detect anomalies and threat patterns in system logs
+
+- QA/DevOps: Tag and group logs for faster debugging and error resolution
+
+
