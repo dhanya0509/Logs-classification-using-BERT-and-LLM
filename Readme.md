@@ -33,10 +33,19 @@ This project demonstrates a scalable approach to **log classification** using **
 - ✅ Dual-mode classification (ML model and cloud-based LLM)
 
 ## 📈 Use Cases
-- IT Operations: Automatically classify logs by service, type, or error level
+- IT Operations: Automatically classify logs by service, type, or error leve
 
 - Cybersecurity: Detect anomalies and threat patterns in system logs
 
 - QA/DevOps: Tag and group logs for faster debugging and error resolution
 
 
+---
+
+## 📬 Contact
+
+Created by **Naga Sai Dhanya Veerepalli**  
+📧 Email: nveerepa@gmu.edu  
+🔗 GitHub: [dhanya0509](https://github.com/dhanya0509)
+
+---
